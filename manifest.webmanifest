@@ -1,0 +1,24 @@
+{
+  "name": "భక్తిమాల",
+  "short_name": "భక్తిమాల",
+  "description": "తెలుగులో భక్తి పాటలు మరియు స్తోత్రాలు చదవడానికి సరళమైన PWA",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#fff7ed",
+  "theme_color": "#f97316",
+  "lang": "te",
+  "icons": [
+    {
+      "src": "icons/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

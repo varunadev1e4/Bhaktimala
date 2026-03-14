@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="te">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f97316" />
+    <meta name="description" content="భక్తి గీతాలు, స్తోత్రాలు చదవడానికి సరళమైన తెలుగు యాప్" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="icons/icon-192.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icons/icon-512.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>భక్తిమాల</title>
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>భక్తిమాల</h1>
+        <p class="subtitle">దేవుడిని ఎంచుకుని స్తోత్రం చదవండి</p>
+      </div>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>1) దేవుడిని ఎంచుకోండి</h2>
+        <label for="godSelect" class="sr-only">దేవుడు</label>
+        <select id="godSelect">
+          <option value="">-- దేవుడు --</option>
+        </select>
+      </section>
+
+      <section class="card">
+        <h2>2) పాట / స్తోత్రం ఎంచుకోండి</h2>
+        <label for="songSelect" class="sr-only">పాట</label>
+        <select id="songSelect" disabled>
+          <option value="">ముందు దేవుడిని ఎంచుకోండి</option>
+        </select>
+      </section>
+
+      <section class="card reading-card" id="readingCard" hidden>
+        <h2 id="songTitle"></h2>
+        <article id="lyrics" class="lyrics"></article>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

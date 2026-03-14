@@ -1,0 +1,109 @@
+:root {
+  --bg: #fff7ed;
+  --card: #ffffff;
+  --text: #292524;
+  --muted: #57534e;
+  --accent: #f97316;
+  --accent-soft: #ffedd5;
+  --border: #fdba74;
+}
+
+:root.dark {
+  --bg: #1c1917;
+  --card: #292524;
+  --text: #fafaf9;
+  --muted: #d6d3d1;
+  --accent: #fb923c;
+  --accent-soft: #44403c;
+  --border: #f97316;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans Telugu", "Nirmala UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: var(--accent-soft);
+  border-bottom: 2px solid var(--border);
+  position: sticky;
+  top: 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.subtitle {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.container {
+  padding: 1rem;
+  display: grid;
+  gap: 0.9rem;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.05rem;
+}
+
+select {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.theme-toggle {
+  border: none;
+  background: var(--accent);
+  color: white;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  font-size: 1rem;
+}
+
+.lyrics {
+  white-space: pre-line;
+  line-height: 1.8;
+  font-size: 1.06rem;
+  color: var(--text);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
